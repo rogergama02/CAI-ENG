@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Kallisto';
+    src: url('fonts/Kallisto.woff2') format('woff2'),
+         url('fonts/Kallisto.woff') format('woff'),
+         url('fonts/Kallisto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    font-family: 'Kallisto', Arial, sans-serif;
+    height: 100%;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent; 
+    position: absolute; 
+    width: 100%; 
+    top: 0;
+    z-index: 10; 
+}
+
+header .logo {
+    position: absolute;
+    left: 50px;
+}
+
+header .logo img {
+    margin-top: 20px;
+    margin-left: 60px;
+    height: 90px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.banner {
+    background-image: url('image/BANNER-INICIAL---PROTÓTIPO.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+.banner .content {
+    max-width: 500px;
+}
+
+.banner h1 {
+    margin-top: 45px;
+    margin-left: 100px;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.banner h1 span {
+    color: #001e45;
+}
+
+.banner .button {
+    margin-left: 100px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #001e45;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.whatsapp-float {
+    position: absolute;
+    bottom: 90px;
+    right: 90px;
+}
+
+.whatsapp-float img {
+    width: 80px; /* Ajuste conforme necessário */
+    height: 80px; /* Ajuste conforme necessário */
+    object-fit: contain; /* Para manter a proporção da imagem */
+}
+
+.bi {
+    font-size: 20px; 
+    color: white;    
+    margin-right: 5px;
+}
+
+strong {
+    color: #00fff2;
+}
